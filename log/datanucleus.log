@@ -1,0 +1,807 @@
+07-11-19_00:04:38 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_00:04:39 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_00:04:39 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_00:04:39 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_00:04:39 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_00:04:39 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_00:04:39 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class" with enhanced definition
+07-11-19_00:04:39 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 6 classes.
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_00:04:39 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_00:04:40 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_00:04:40 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_00:04:40 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:40 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:40 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:40 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:40 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:40 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:41 (main) ERROR [DataNucleus.Datastore] - Error thrown executing ALTER TABLE `USER` ADD COLUMN `PAYMENTMETHOD` INTEGER NOT NULL : Table 'easybookingdb.user' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+
+07-11-19_00:04:41 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:41 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:41 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:04:41 (main) ERROR [DataNucleus.Datastore] - An exception was thrown while adding/validating class(es) : Table 'easybookingdb.user' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+
+07-11-19_00:04:41 (main) ERROR [DataNucleus.Datastore] - An exception was thrown while adding/validating class(es) : Table 'easybookingdb.user' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
+	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+
+07-11-19_00:04:41 (main) ERROR [DataNucleus.Datastore] - An exception was thrown while adding/validating class(es) : Table 'easybookingdb.user' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
+	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+
+07-11-19_00:04:41 (main) ERROR [DataNucleus.SchemaTool] - An exception was thrown during the operation of SchemaTool. Please refer to the log for full details. The following may help : Error(s) were found while auto-creating/validating the datastore for classes. The errors are printed in the log, and are attached to this exception.
+Error(s) were found while auto-creating/validating the datastore for classes. The errors are printed in the log, and are attached to this exception.
+org.datanucleus.exceptions.NucleusDataStoreException: Error(s) were found while auto-creating/validating the datastore for classes. The errors are printed in the log, and are attached to this exception.
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2971)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	... 4 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
+	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+java.sql.SQLSyntaxErrorException: Table 'easybookingdb.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
+	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
+	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
+	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+07-11-19_00:05:30 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_00:05:31 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_00:05:31 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_00:05:31 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_00:05:31 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_00:05:31 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_00:05:31 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_00:05:31 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_00:05:32 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:32 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_00:05:33 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_00:05:34 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:07:41 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_00:07:42 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_00:07:42 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_00:07:42 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_00:07:42 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_00:07:42 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_00:07:42 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_00:07:42 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_00:07:43 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_00:07:43 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_00:07:44 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_00:07:45 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:21:55 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_00:21:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_00:21:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_00:21:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_00:21:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_00:21:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_00:21:55 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_00:21:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_00:21:57 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_00:21:57 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_00:21:59 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:25:02 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_00:25:02 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_00:25:02 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_00:25:02 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_00:25:02 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_00:25:02 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_00:25:02 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_00:25:02 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_00:25:03 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_00:25:04 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_00:25:05 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_09:59:21 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_09:59:21 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_09:59:21 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_09:59:21 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_09:59:21 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_09:59:21 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_09:59:21 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_09:59:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_09:59:23 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_09:59:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_09:59:25 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:12:25 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:12:26 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:12:26 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:12:26 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:12:26 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:12:26 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:12:26 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:12:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:12:27 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:12:27 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:12:29 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:16:23 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:16:23 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:16:23 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:16:23 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:16:23 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:16:23 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:16:23 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:16:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:16:24 (main) ERROR [DataNucleus.Datastore.Schema] - Failed initialising database.
+Unknown database 'easybookingdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'easybookingdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 12 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+07-11-19_10:16:24 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Unknown database 'easybookingdb'
+07-11-19_10:16:24 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Unknown database 'easybookingdb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'easybookingdb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	... 12 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: Unknown database 'easybookingdb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
+	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
+07-11-19_10:17:15 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:17:15 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:17:15 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:17:15 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:17:15 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:17:15 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:17:15 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:17:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:17:16 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+07-11-19_10:17:17 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:17:18 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:21:46 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:21:46 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:21:46 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:21:46 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:21:46 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:21:46 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:21:46 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:21:46 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:21:47 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:21:47 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:21:48 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:21:49 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:24:24 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:24:24 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:24:24 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:24:24 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:24:24 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:24:24 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:24:24 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:24:24 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:24:26 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:24:26 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:24:27 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:24:54 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:24:54 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:24:54 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:24:54 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:24:54 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:24:54 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:24:54 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:24:55 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:24:56 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:24:56 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:24:57 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:28:55 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:28:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:28:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:28:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:28:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:28:55 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:28:55 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:28:56 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:28:57 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:28:57 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:28:59 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:29:48 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:29:48 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:29:48 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:29:48 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:29:48 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:29:48 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:29:48 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:29:48 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:29:49 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:29:49 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:29:50 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:29:51 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:30:22 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 5.2.1) for API "JDO"
+07-11-19_10:30:22 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class" with enhanced definition
+07-11-19_10:30:22 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class" with enhanced definition
+07-11-19_10:30:22 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class" with enhanced definition
+07-11-19_10:30:22 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class" with enhanced definition
+07-11-19_10:30:22 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class" with enhanced definition
+07-11-19_10:30:22 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 5 classes.
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creation of the schema for classes
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-api-jdo-5.2.1.jar
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-cache-5.1.1.jar
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-core-5.2.1.jar
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/datanucleus-rdbms-5.2.1.jar
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/javax.jdo-3.2.0-m12.jar
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/log4j-1.2.14.jar
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/lib/mysql-connector-java-8.0.17.jar
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin
+07-11-19_10:30:22 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/resources
+07-11-19_10:30:23 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Input Files
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal$1.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/GUI/JFramePrincipal.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airline.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Airport.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Flight.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IMasterCard.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IPayPal.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/IVisa.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Main.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Passenger.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/Reservation.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - >>  /Users/Tomoutch/SD/workspace/easyBooking/bin/classes/User.class
+07-11-19_10:30:23 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool completed successfully
+07-11-19_10:30:25 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
