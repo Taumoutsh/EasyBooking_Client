@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project name="easyBooking" default="run" basedir=".">
+<project name="EasyBooking_Client" default="run" basedir=".">
     <!-- project directories -->
     <property name="src.dir" location="src"/>
     <property name="bin.dir" location="bin"/>
 	<property name="lib.dir" location="lib"/>
 	<property name="resources.dir" location="resources"/>
-	
+	<property name="rmireg.server.port" value="1099"/>
+	<property name="rmireg.server.IP" value="127.0.0.1"/>
+	<property name="server.name" value="EasyBooking"/>
+
     <!-- Classpath -->
     <path id="full.classpath">
         <fileset dir="${lib.dir}">
@@ -34,11 +37,11 @@
             <include name="**/*.java"/>
         </javac>
     </target>
-	
+
     <!-- TARGET : enhance -->
     <target name="enhance" depends="compile">
     	<taskdef name="enhancer" classpathref="full.classpath" classname="org.datanucleus.enhancer.EnhancerTask" />
-    	
+
    		<enhancer classpathref="full.classpath" failonerror="true">
             <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
             <fileset dir="${bin.dir}">
@@ -46,7 +49,7 @@
             </fileset>
    		</enhancer>
     </target>
-	
+
     <!-- TARGET : SchemaTool "create" -->
     <target name="createschema" depends="enhance">
         <taskdef name="schematool" classpathref="full.classpath" classname="org.datanucleus.store.schema.SchemaToolTask"/>
@@ -70,11 +73,28 @@
             </fileset>
         </schematool>
     </target>
-	
-    <!-- TARGET : Run -->	
+
+    <!-- TARGET : Run -->
 	<target name="run" depends="createschema">
         <java classname="classes.Main" classpathref="full.classpath" fork="true">
         	<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
 		</java>
     </target>
+	
+	<target name="build" description="Builds the project">
+			<delete dir="${build.dir}"/>
+			<mkdir dir="${build.dir}"/>
+			<javac srcdir="${source.dir}" destdir="${build.dir}" classpath="${classpath}" deprecation="true" fork="true" includeantruntime="no"/>
+	</target>
+	
+	<target name="client" depends="build" description="Runs Server program">
+			<java classname="easybooking.server.manager.BookManagerServer" classpath="${classpath}" fork="true">
+	        	<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
+				<jvmarg value="-Djava.security.policy=${policy.file}"/>
+	        	<arg value="${rmireg.server.IP}"/>
+		 		<arg value="${rmireg.server.port}"/>
+				<arg value="${server.name}"/>
+	        </java>
+	</target>
+	
 </project>

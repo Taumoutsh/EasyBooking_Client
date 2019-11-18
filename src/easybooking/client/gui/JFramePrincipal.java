@@ -1,4 +1,4 @@
-package GUI;
+package easybooking.client.gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

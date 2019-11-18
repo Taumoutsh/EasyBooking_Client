@@ -1,4 +1,4 @@
-package classes;
+package easybooking.client.data.classes;
 
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Inheritance;

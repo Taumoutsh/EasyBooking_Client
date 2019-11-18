@@ -1,4 +1,4 @@
-package classes;
+package easybooking.client.data.classes;
 
 import java.util.HashMap;
 
