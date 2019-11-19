@@ -1,11 +1,14 @@
 package easybooking.client.controller;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import easbooking.client.servicelocator.AppServiceLocator;
 import easybooking.client.data.classes.Flight;
 import easybooking.client.data.classes.Reservation;
 import easybooking.client.gui.JFramePrincipal;
+import easybooking.server.data.dto.FlightDTO;
 
 public class AppController {
 	
@@ -17,28 +20,28 @@ public class AppController {
 		rsl.setService(args);
 	}
 	
-	public static void main(String args[]) {
-		new AppController(args);
+	public boolean signUp(String email, String password, String firstname, String lastname) {
+		return rsl.getService().signUp(email, password, firstname, lastname);
 	}
 	
-	public void signUp(String email, String password, String firstname, String lastname) {
-		boolean signUpBoolean = rsl.getService().signUp(email, password, firstname, lastname);
+	public boolean logIn(String email, String password) {
+		return rsl.getService().logIn(email, password);
 	}
 	
-	public void logIn(String email, String password) {
-		boolean logInBoolean  = rsl.getService().logIn(email, password);
+	public HashMap<String, ArrayList<FlightDTO>> searchAirportDate(String origin, String destination, Timestamp timestampOrigin, Timestamp timestampDestination) {
+		return rsl.getService().searchAirportDate(origin, destination, timestampOrigin, timestampDestination);
 	}
 	
-	public void searchAirportDate(String origin, String destination, Timestamp timestampOrigin, Timestamp timestampDestination) {
-		rsl.getService().searchAirportDate(origin, destination, timestampOrigin, timestampDestination);
+	public boolean pay() {
+		return rsl.getService().pay();
 	}
 	
-	public void pay(Reservation reservation) {
-		rsl.getService().pay(reservation);
+	public boolean book(HashMap<String, String> passenger) {
+		return rsl.getService().book(passenger);
 	}
 	
-	public void book(Flight flight) {
-		rsl.getService().book(flight);
+	public boolean chooseFlight(FlightDTO flight) {
+		return rsl.getService().chooseFlight(flight);
 	}
 
 	
@@ -46,5 +49,7 @@ public class AppController {
 		
 	}
 	
-
+	public static void main(String args[]) {
+		new AppController(args);
+	}
 }
