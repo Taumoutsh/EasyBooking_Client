@@ -1,4 +1,4 @@
-package easbooking.client.servicelocator;
+package easybooking.client.servicelocator;
 
 import easybooking.server.remote.IBookManager;
 
@@ -11,13 +11,13 @@ public class AppServiceLocator {
     	String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
     	try {
     		service = (IBookManager) java.rmi.Naming.lookup(name);
+    		System.out.println("It works!");
     	}
     	catch(Exception e){
     		
     		System.out.println("Server not defined : ");
     		e.printStackTrace();	
-    	}
-		
+    	}	
 	}
 	
 	public IBookManager getService() { 	

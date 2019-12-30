@@ -3,11 +3,6 @@ package easybooking.client.data.classes;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Inheritance;
-import javax.jdo.annotations.InheritanceStrategy;
-import javax.jdo.annotations.Join;
-
 public class User {
 	private String email;
 	private int paymentMethod, autorizationMethod;

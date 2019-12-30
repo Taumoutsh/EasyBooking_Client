@@ -2,16 +2,9 @@ package easybooking.client.data.classes;
 
 import java.util.HashMap;
 
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Inheritance;
-import javax.jdo.annotations.InheritanceStrategy;
-import javax.jdo.annotations.Join;
-
-@PersistenceCapable
 public class Airline {
 	//properties
 	private String idAirline;
-	@Join
 	private HashMap<String,Flight> flightList;
 	
 	//constructors

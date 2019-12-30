@@ -1,3 +1,5 @@
+/*
+
 package easybooking.client.data.classes;
 
 import java.sql.Date;
@@ -12,6 +14,7 @@ import javax.jdo.Transaction;
 public class Main {
 
 	public static void main(String[] args) {
+		
 
 		try {
 		
@@ -19,8 +22,8 @@ public class Main {
 		//create the classes
 			Date d = new Date(2020, 3,23);
 			Date d2 = new Date(2020, 3,26);
-			Flight f1 = new Flight("001",500,500,d,d2);
-			Flight f2 = new Flight("002",500,500,d,d2);
+			Flight f1 = new Flight("001",500,500,d,d2, 0, null, null, null);
+			Flight f2 = new Flight("002",500,500,d,d2, 0, null, null, null);
 			Airport bilbao = new Airport("BIO","Bilbao");
 			Airline iberia = new Airline("IBE");
 			Reservation r1= new  Reservation(Integer.parseInt(f1.getFlightNumber()), 2);
@@ -196,3 +199,6 @@ public class Main {
 	}
 
 }
+
+
+*/

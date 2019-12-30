@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project name="EasyBooking_Client" default="run" basedir=".">
     <!-- project directories -->
-    <property name="src.dir" location="src"/>
+    <property name="source.dir" location="src"/>
     <property name="bin.dir" location="bin"/>
 	<property name="lib.dir" location="lib"/>
 	<property name="resources.dir" location="resources"/>
 	<property name="rmireg.server.port" value="1099"/>
 	<property name="rmireg.server.IP" value="127.0.0.1"/>
-	<property name="server.name" value="EasyBooking"/>
+	<property name="server.name" value="EasyBooking_Server"/>
 
     <!-- Classpath -->
     <path id="full.classpath">
         <fileset dir="${lib.dir}">
-            <include name="**/*.jar"/>
+            <include name="*.jar"/>
         </fileset>
         <pathelement location="${bin.dir}"/>
         <pathelement location="${resources.dir}"/>
@@ -82,19 +82,18 @@
     </target>
 	
 	<target name="build" description="Builds the project">
-			<delete dir="${build.dir}"/>
-			<mkdir dir="${build.dir}"/>
-			<javac srcdir="${source.dir}" destdir="${build.dir}" classpath="${classpath}" deprecation="true" fork="true" includeantruntime="no"/>
+		<delete dir="${build.dir}"/>
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="${source.dir}" destdir="${build.dir}" classpathref="full.classpath" deprecation="true" fork="true" includeantruntime="no"/>
 	</target>
 	
 	<target name="client" depends="build" description="Runs Server program">
-			<java classname="easybooking.server.manager.BookManagerServer" classpath="${classpath}" fork="true">
-	        	<jvmarg value="-Djava.rmi.server.codebase=file:${build.dir}/"/>
-				<jvmarg value="-Djava.security.policy=${policy.file}"/>
-	        	<arg value="${rmireg.server.IP}"/>
-		 		<arg value="${rmireg.server.port}"/>
-				<arg value="${server.name}"/>
-	        </java>
+		<java classname="easybooking.client.controller.AppController" classpathref="full.classpath" fork="true">
+			<jvmarg value="-Djava.security.policy=${policy.file}"/>
+			<arg value="${rmireg.server.IP}"/>
+			<arg value="${rmireg.server.port}"/>
+			<arg value="${server.name}"/>
+	    </java>
 	</target>
 	
 </project>

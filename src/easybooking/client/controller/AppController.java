@@ -1,11 +1,14 @@
 package easybooking.client.controller;
 
-import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
-import easbooking.client.servicelocator.AppServiceLocator;
 import easybooking.client.data.classes.Flight;
 import easybooking.client.data.classes.Reservation;
 import easybooking.client.gui.JFramePrincipal;
+import easybooking.client.servicelocator.AppServiceLocator;
+import easybooking.server.data.dto.FlightDTO;
 
 public class AppController {
 	
@@ -21,24 +24,70 @@ public class AppController {
 		new AppController(args);
 	}
 	
-	public void signUp(String email, String password, String firstname, String lastname) {
-		boolean signUpBoolean = rsl.getService().signUp(email, password, firstname, lastname);
+	public boolean signUp(String email, String password, String firstname, String lastname) {
+		
+		boolean signUpBoolean = false;
+		
+		try {
+			signUpBoolean = rsl.getService().signUp(email, password, firstname, lastname);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return signUpBoolean;
 	}
 	
-	public void logIn(String email, String password) {
-		boolean logInBoolean  = rsl.getService().logIn(email, password);
+	public boolean logIn(String email, String password) {
+		
+		boolean logInBoolean = false;
+		
+		try {
+			logInBoolean  = rsl.getService().logIn(email, password);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return logInBoolean;
 	}
 	
-	public void searchAirportDate(String origin, String destination, Timestamp timestampOrigin, Timestamp timestampDestination) {
-		rsl.getService().searchAirportDate(origin, destination, timestampOrigin, timestampDestination);
+	public Map<String, ArrayList<FlightDTO>> searchFlight(String origin, String destination) {
+		
+		Map<String, ArrayList<FlightDTO>> mapFlight = new HashMap<String, ArrayList<FlightDTO>>();
+		
+		try {
+			mapFlight = rsl.getService().searchFlight(origin, destination);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return mapFlight;
 	}
 	
 	public void pay(Reservation reservation) {
-		rsl.getService().pay(reservation);
+		try {
+			rsl.getService().pay();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
-	public void book(Flight flight) {
-		rsl.getService().book(flight);
+	public boolean book(FlightDTO flight) {
+		
+		boolean bookBoolean = false;
+		
+		try {
+			bookBoolean = rsl.getService().bookFlight(flight);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return bookBoolean;
+		
 	}
 
 	

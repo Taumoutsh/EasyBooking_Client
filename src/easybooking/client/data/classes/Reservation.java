@@ -2,13 +2,6 @@ package easybooking.client.data.classes;
 
 import java.util.Scanner;
 
-import javax.jdo.annotations.Inheritance;
-import javax.jdo.annotations.InheritanceStrategy;
-import javax.jdo.annotations.Join;
-import javax.jdo.annotations.PersistenceCapable;
-
-
-@PersistenceCapable
 public class Reservation implements IVisa, IMasterCard, IPayPal{
 	private int flightCode, paymentCode, numberOfSeats;
 	private Passenger passengers[];

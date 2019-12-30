@@ -2,18 +2,9 @@ package easybooking.client.data.classes;
 
 import java.util.HashMap;
 
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Inheritance;
-import javax.jdo.annotations.InheritanceStrategy;
-import javax.jdo.annotations.Join;
-
-@PersistenceCapable
-
 public class Airport {
 	private String idAirport, location;
-	@Join
 	private HashMap<String, Flight> arrivingflightList;//map of flights that arrive this airport
-	@Join
 	private HashMap<String, Flight> outGoingFlightList;//map of flights that come from this airport
 	public Airport(String idAirport, String location, HashMap<String, Flight> EnteringflightList,HashMap<String, Flight> outgoingFlightList) {
 		this.idAirport = idAirport;

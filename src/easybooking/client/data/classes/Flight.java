@@ -2,42 +2,41 @@ package easybooking.client.data.classes;
 
 import java.sql.Date;
 
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Inheritance;
-import javax.jdo.annotations.InheritanceStrategy;
-
-@PersistenceCapable
-@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
-
 public class Flight {
 //properties
 	private String flightNumber;
 	private int totalSeats, remainingSeats;
-	private Date departureTimeDate, arrivaTimeDate;
-	//should the flights have an string with the origin and destination airport's code??
+	private Date departureTimeDate, arrivalTimeDate;
+	private int price;
+	private Airline airline;
+	private Airport depatureAirport, arrivalAirport;
 
 	//constructor
 	public Flight(String flightNumber, int totalSeats, int remainingSeats, Date departureTimeDate,
-			Date arrivaTimeDate) {
+			Date arrivalTimeDate, int price, Airline airline, Airport depatureAirport, Airport arrivalAirport) {
 		this.flightNumber = flightNumber;
 		this.totalSeats = totalSeats;
 		this.remainingSeats = remainingSeats;
 		this.departureTimeDate = departureTimeDate;
-		this.arrivaTimeDate = arrivaTimeDate;
+		this.arrivalTimeDate = arrivalTimeDate;
+		this.price = price;
+		this.airline = airline;
+		this.depatureAirport = depatureAirport;
+		this.arrivalAirport = arrivalAirport;
 	}
 	public Flight() {
-		this.flightNumber = null;
-		this.totalSeats = 0;
-		this.remainingSeats = 0;
-		this.departureTimeDate = null;
-		this.arrivaTimeDate = null;
 	}
+	
 	public Flight(Flight f) {
-		this.flightNumber = f.flightNumber;
-		this.totalSeats = f.totalSeats;
-		this.remainingSeats = f.remainingSeats;
-		this.departureTimeDate = f.departureTimeDate;
-		this.arrivaTimeDate = f.arrivaTimeDate;
+		this.flightNumber = f.getFlightNumber();
+		this.totalSeats = f.getTotalSeats();
+		this.remainingSeats = f.getRemainingSeats();
+		this.departureTimeDate = f.getDepartureTimeDate();
+		this.arrivalTimeDate = f.getArrivalTimeDate();
+		this.price = f.getPrice();
+		this.airline = f.getAirline();
+		this.depatureAirport = f.getDepatureAirport();
+		this.arrivalAirport = f.getArrivalAirport();
 	}
 	
 	//getters and setters
@@ -65,12 +64,35 @@ public class Flight {
 	public void setDepartureTimeDate(Date departureTimeDate) {
 		this.departureTimeDate = departureTimeDate;
 	}
-	public Date getArrivaTimeDate() {
-		return arrivaTimeDate;
+	public Date getArrivalTimeDate() {
+		return arrivalTimeDate;
 	}
-	public void setArrivaTimeDate(Date arrivaTimeDate) {
-		this.arrivaTimeDate = arrivaTimeDate;
+	public void setArrivalTimeDate(Date arrivalTimeDate) {
+		this.arrivalTimeDate = arrivalTimeDate;
 	}
-	
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public Airline getAirline() {
+		return airline;
+	}
+	public void setAirline(Airline airline) {
+		this.airline = airline;
+	}
+	public Airport getDepatureAirport() {
+		return depatureAirport;
+	}
+	public void setDepatureAirport(Airport depatureAirport) {
+		this.depatureAirport = depatureAirport;
+	}
+	public Airport getArrivalAirport() {
+		return arrivalAirport;
+	}
+	public void setArrivalAirport(Airport arrivalAirport) {
+		this.arrivalAirport = arrivalAirport;
+	}
 
 }
