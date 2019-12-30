@@ -8,6 +8,7 @@ import easybooking.client.data.classes.Flight;
 import easybooking.client.data.classes.Reservation;
 import easybooking.client.gui.JFramePrincipal;
 import easybooking.client.servicelocator.AppServiceLocator;
+
 import easybooking.server.data.dto.FlightDTO;
 
 public class AppController {
@@ -18,10 +19,6 @@ public class AppController {
 		new JFramePrincipal();
 		rsl = new AppServiceLocator();
 		rsl.setService(args);
-	}
-	
-	public static void main(String args[]) {
-		new AppController(args);
 	}
 	
 	public boolean signUp(String email, String password, String firstname, String lastname) {
@@ -87,7 +84,6 @@ public class AppController {
 		}
 		
 		return bookBoolean;
-		
 	}
 
 	
@@ -95,5 +91,7 @@ public class AppController {
 		
 	}
 	
-
+	public static void main(String args[]) {
+		new AppController(args);
+	}
 }

@@ -2,7 +2,7 @@ package easybooking.client.data.classes;
 
 import java.util.Scanner;
 
-public class Reservation implements IVisa, IMasterCard, IPayPal{
+public class Reservation{
 	private int flightCode, paymentCode, numberOfSeats;
 	private Passenger passengers[];
 	
@@ -108,20 +108,17 @@ public class Reservation implements IVisa, IMasterCard, IPayPal{
 	}
 	
 	
-	@Override
 	public int payPayPal(String email, String password) {
 		//paypal authorizates the account
 		System.out.println("acceding to the account of "+email);
 		return (int) (Math.random()*Integer.MAX_VALUE);//this can cause repetition of paymentCode
 	}
 
-	@Override
 	public int payMasterCard(int cardNumber, String UserName, String UserSurname, int expirationMonth,
 			int expirationYear, int criptogram) {
 		return  (int) (Math.random()*Integer.MAX_VALUE);
 	}
 
-	@Override
 	public int payVisa(int cardNumber, String UserName, String UserSurname, int expirationMonth, int expirationYear,
 			int criptogram) {
 		return  (int) (Math.random()*Integer.MAX_VALUE);
