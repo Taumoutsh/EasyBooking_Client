@@ -15,9 +15,10 @@ public class AppController {
 	AppServiceLocator rsl;
 	
 	public AppController(String args[]) {
-		new JFramePrincipal();
+		new JFramePrincipal(this);
 		rsl = new AppServiceLocator();
 		rsl.setService(args);
+		printAllFlights();
 	}
 	
 	public static void main(String args[]) {
@@ -66,6 +67,21 @@ public class AppController {
 		return mapFlight;
 	}
 	
+	public Map<String, ArrayList<FlightDTO>> printAllFlights() {
+		
+		Map<String, ArrayList<FlightDTO>> mapFlight = new HashMap<String, ArrayList<FlightDTO>>();
+		
+		try {
+			mapFlight = rsl.getService().printAllFlights();
+			System.out.println(mapFlight.get("Lufthansa").get(0).getArrivalAirportLocation());
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return mapFlight;
+	}
+	
 	public void pay(Reservation reservation) {
 		try {
 			rsl.getService().pay();
@@ -87,7 +103,7 @@ public class AppController {
 		}
 		
 		return bookBoolean;
-		
+		 
 	}
 
 	
