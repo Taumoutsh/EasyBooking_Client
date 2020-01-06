@@ -24,6 +24,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 import javax.swing.JTextField;
 
@@ -36,6 +37,8 @@ public class JFramePrincipal extends JFrame {
 	private JList<String> tvProgsList1 = new JList<String>();
 	private DefaultListModel<String> tvProgsList = new DefaultListModel<String>();
 	private AppController controller;
+	private JLabel lblDeparture;
+	private JLabel lblArrival;
 
 	/**
 	 * Launch the application.
@@ -43,7 +46,7 @@ public class JFramePrincipal extends JFrame {
 	public void printWindow(JFrame frame) {
 			try {	
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame.setBounds(100, 100, 600, 400);
+				frame.setBounds(100, 100, 600, 600);
 				contentPane = new JPanel();
 				contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 				contentPane.setLayout(new BorderLayout(0, 0));
@@ -55,11 +58,11 @@ public class JFramePrincipal extends JFrame {
 				contentPane.add(labelPanels, BorderLayout.WEST);
 				labelPanels.setLayout(new GridLayout(2,1));
 					
-				JLabel lblSearchBy = new JLabel("Departure :");
-				labelPanels.add(lblSearchBy);
+				lblDeparture = new JLabel("Departure :");
+				labelPanels.add(lblDeparture);
 					
-				JLabel lblNewLabel = new JLabel("Arrival :");
-				labelPanels.add(lblNewLabel);
+				lblArrival = new JLabel("Arrival :");
+				labelPanels.add(lblArrival);
 					
 				JLabel lblEasybooking = new JLabel("EasyBooking");
 				lblEasybooking.setHorizontalAlignment(SwingConstants.CENTER);
@@ -81,11 +84,17 @@ public class JFramePrincipal extends JFrame {
 				// Button panel
 				
 				JPanel buttonPanel = new JPanel();
-				contentPane.add(buttonPanel, BorderLayout.SOUTH);
+				contentPane.add(buttonPanel, BorderLayout.NORTH);
 				buttonPanel.setLayout(new GridLayout(2,2));
 				
 				JButton searchButton = new JButton();
 				searchButton.setText("Search");
+				searchButton.addActionListener(new java.awt.event.ActionListener() {
+					public void actionPerformed(java.awt.event.ActionEvent evt) {
+						 searchButtonActionPerformed(evt);
+						}
+
+					});
 				
 				JButton viewFlightButton = new JButton();
 				viewFlightButton.setText("View all flights");
@@ -104,10 +113,19 @@ public class JFramePrincipal extends JFrame {
 				scrollTVProgs1.setPreferredSize(new java.awt.Dimension(100, 110));
 				scrollTVProgs1.add(tvProgsList1);
 				tvProgsList1.setModel(tvProgsList);
+				JButton bookButton = new JButton();
+				bookButton.setText("Book a flight");
+				bookButton.addActionListener(new java.awt.event.ActionListener() {
+					public void actionPerformed(java.awt.event.ActionEvent evt) {
+							bookButtonActionPerformed(evt);
+					}
+
+				});
 				
-				JPanel flightPanel = new JPanel((new GridLayout(4, 0)));
-				flightPanel.add(scrollTVProgs1);
-				contentPane.add(flightPanel);
+				JPanel flightPanel = new JPanel((new GridLayout(4, 10)));
+				flightPanel.add(tvProgsList1);
+				flightPanel.add(bookButton);
+				contentPane.add(flightPanel, BorderLayout.SOUTH);
 				
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -130,20 +148,40 @@ public class JFramePrincipal extends JFrame {
 		
 	}
 	
+	
+	private void searchButtonActionPerformed(ActionEvent evt) {
+		Map<String, ArrayList<FlightDTO>> allFlights = controller.searchFlight(departureAirport.getText(), arrivalAirport.getText());
+		System.out.println("Search - Departure : "+departureAirport.getText()+", Arrival :"+arrivalAirport.getText());
+		updateList(allFlights);
+		
+	}
+	
+	private void bookButtonActionPerformed(ActionEvent evt) {
+		String selected = tvProgsList1.getSelectedValue();
+		StringTokenizer st = new StringTokenizer(selected, " ");
+		String flightNumber = st.nextToken();
+		controller.book(flightNumber);
+		
+		System.out.println("Book - Departure : "+departureAirport.getText()+", Arrival :"+arrivalAirport.getText());
+		
+	}
+	
 	public void updateList(Map<String, ArrayList<FlightDTO>> allFlights) {
+		
+		tvProgsList.clear();
 		
 		for(Map.Entry<String, ArrayList<FlightDTO>> entry : allFlights.entrySet()) {
 		    String key = entry.getKey();
 		    ArrayList<FlightDTO> value = entry.getValue();
 		    
-		    tvProgsList.clear();
-		    
 		    for(FlightDTO flight : value) {
-		    	System.out.println(flight.getArrivalAirportCode());
-		    	tvProgsList.addElement(flight.getArrivalAirportCode());
+		    	System.out.println("FLIGHT : "+flight.getAirlineCode()+" - FLIGHT NB : "+flight.getFlightNumber()+" - FROM : "+flight.getDepatureAirportCode()+" - TO : "+flight.getArrivalAirportCode());
+		    	tvProgsList.addElement(flight.getFlightNumber()+" FLIGHT : "+flight.getAirlineCode()+" - FROM : "+flight.getDepatureAirportCode()+" - TO : "+flight.getArrivalAirportCode());
 		    }
 
 		}
+		
+		tvProgsList1.setModel(tvProgsList);
 		
 	}
 

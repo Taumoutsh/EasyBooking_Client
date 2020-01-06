@@ -14,12 +14,15 @@ import easybooking.server.data.dto.FlightDTO;
 public class AppController {
 	
 	AppServiceLocator rsl;
+	Map<String, ArrayList<FlightDTO>> mapFlight;
 	
 	public AppController(String args[]) {
 		new JFramePrincipal(this);
 		rsl = new AppServiceLocator();
 		rsl.setService(args);
 		printAllFlights();
+		mapFlight = new HashMap<String, ArrayList<FlightDTO>>();
+		
 	}
 	
 	public boolean signUp(String email, String password, String firstname, String lastname) {
@@ -52,8 +55,6 @@ public class AppController {
 	
 	public Map<String, ArrayList<FlightDTO>> searchFlight(String origin, String destination) {
 		
-		Map<String, ArrayList<FlightDTO>> mapFlight = new HashMap<String, ArrayList<FlightDTO>>();
-		
 		try {
 			mapFlight = rsl.getService().searchFlight(origin, destination);
 		}
@@ -65,8 +66,6 @@ public class AppController {
 	}
 	
 	public Map<String, ArrayList<FlightDTO>> printAllFlights() {
-		
-		Map<String, ArrayList<FlightDTO>> mapFlight = new HashMap<String, ArrayList<FlightDTO>>();
 		
 		try {
 			mapFlight = rsl.getService().printAllFlights();
@@ -88,12 +87,23 @@ public class AppController {
 		}
 	}
 	
-	public boolean book(FlightDTO flight) {
+	public boolean book(String flightNumber) {
 		
 		boolean bookBoolean = false;
 		
 		try {
-			bookBoolean = rsl.getService().bookFlight(flight);
+			
+			for(Map.Entry<String, ArrayList<FlightDTO>> entry : mapFlight.entrySet()) {
+			    String key = entry.getKey();
+			    ArrayList<FlightDTO> value = entry.getValue();
+			    
+			    for(FlightDTO aFlight : value) {
+			    	if(aFlight.getFlightNumber().equals(flightNumber)) {
+			    		bookBoolean = rsl.getService().bookFlight(aFlight);
+			    	}
+			    }
+			}
+			
 		}
 		catch(Exception e) {
 			e.printStackTrace();
