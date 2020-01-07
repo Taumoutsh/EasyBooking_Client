@@ -77,12 +77,12 @@ public class AppController {
 		return mapFlight;
 	}
 	
-	public int pay() {
+	public int pay(String paymentMethod) {
 		
 		int paid = 0;
 		
 		try {
-			paid = rsl.getService().pay();
+			paid = rsl.getService().pay(paymentMethod);
 		}
 		catch(Exception e) {
 			e.printStackTrace();

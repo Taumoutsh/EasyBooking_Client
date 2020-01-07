@@ -41,10 +41,18 @@ public class JFramePrincipal extends JFrame {
 	private JLabel lblDeparture;
 	private JLabel lblArrival;
 	private Map<String, ArrayList<FlightDTO>> allFlights;
-
+	
 	/**
-	 * Launch the application.
+	 * Create the frame.
 	 */
+	public JFramePrincipal(String userAddress, AppController controller) {
+		this.userAddress = userAddress;
+		this.controller = controller;
+		printWindow(this);
+		this.setVisible(true);	
+	}
+	
+	// TODO : Possible to add date in the research
 	public void printWindow(JFrame frame) {
 			try {	
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -133,17 +141,6 @@ public class JFramePrincipal extends JFrame {
 				e.printStackTrace();
 			}
 	}
-
-	/**
-	 * Create the frame.
-	 */
-	public JFramePrincipal(String userAddress, AppController controller) {
-		this.userAddress = userAddress;
-		this.controller = controller;
-		printWindow(this);
-		this.setVisible(true);
-		
-	}
 	
 	private void viewFlightButtonActionPerformed(ActionEvent evt) {
 		allFlights = controller.printAllFlights();
@@ -154,7 +151,6 @@ public class JFramePrincipal extends JFrame {
 	
 	private void searchButtonActionPerformed(ActionEvent evt) {
 		allFlights = controller.searchFlight(departureAirport.getText(), arrivalAirport.getText());
-		System.out.println("Search - Departure : "+departureAirport.getText()+", Arrival :"+arrivalAirport.getText());
 		updateList(allFlights);
 		
 	}
@@ -165,8 +161,6 @@ public class JFramePrincipal extends JFrame {
 		String flightNumber = st.nextToken();
     	JFrameBooking frame = new JFrameBooking(flightNumber, userAddress, controller);
 		exit();
-		
-		System.out.println("Book - Departure : "+departureAirport.getText()+", Arrival :"+arrivalAirport.getText());
 		
 	}
 	

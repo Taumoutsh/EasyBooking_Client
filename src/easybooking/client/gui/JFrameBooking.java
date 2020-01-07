@@ -161,7 +161,7 @@ public class JFrameBooking extends JFrame {
 		    	
 		    	String authorizationService = payingBg.getSelection().getActionCommand();
 		    	
-		    	int paid = controller.pay();
+		    	int paid = controller.pay(authorizationService);
 		    	
 		    	if(paid != 0) {
 		    		
