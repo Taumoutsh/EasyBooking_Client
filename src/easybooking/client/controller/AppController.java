@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import easybooking.client.data.classes.Flight;
-import easybooking.client.data.classes.Reservation;
+import easybooking.client.gui.JFrameConnection;
 import easybooking.client.gui.JFramePrincipal;
 import easybooking.client.servicelocator.AppServiceLocator;
 
@@ -17,7 +16,7 @@ public class AppController {
 	Map<String, ArrayList<FlightDTO>> mapFlight;
 	
 	public AppController(String args[]) {
-		new JFramePrincipal(this);
+		new JFrameConnection(this);
 		rsl = new AppServiceLocator();
 		rsl.setService(args);
 		printAllFlights();
@@ -25,12 +24,12 @@ public class AppController {
 		
 	}
 	
-	public boolean signUp(String email, String password, String firstname, String lastname) {
+	public boolean signUp(String authorizationService, String email, String password, String firstname, String lastname) {
 		
 		boolean signUpBoolean = false;
 		
 		try {
-			signUpBoolean = rsl.getService().signUp(email, password, firstname, lastname);
+			signUpBoolean = rsl.getService().signUp(authorizationService, email, password, firstname, lastname);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -39,12 +38,12 @@ public class AppController {
 		return signUpBoolean;
 	}
 	
-	public boolean logIn(String email, String password) {
+	public boolean logIn(String authorizationService, String email, String password) {
 		
 		boolean logInBoolean = false;
 		
 		try {
-			logInBoolean  = rsl.getService().logIn(email, password);
+			logInBoolean = rsl.getService().logIn(authorizationService, email, password);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -78,31 +77,27 @@ public class AppController {
 		return mapFlight;
 	}
 	
-	public void pay(Reservation reservation) {
+	public int pay() {
+		
+		int paid = 0;
+		
 		try {
-			rsl.getService().pay();
+			paid = rsl.getService().pay();
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
+		
+		return paid;
 	}
 	
-	public boolean book(String flightNumber) {
+	public boolean book(String flightNumber, String name1, String surname1, String name2, String surname2) {
 		
 		boolean bookBoolean = false;
 		
 		try {
 			
-			for(Map.Entry<String, ArrayList<FlightDTO>> entry : mapFlight.entrySet()) {
-			    String key = entry.getKey();
-			    ArrayList<FlightDTO> value = entry.getValue();
-			    
-			    for(FlightDTO aFlight : value) {
-			    	if(aFlight.getFlightNumber().equals(flightNumber)) {
-			    		bookBoolean = rsl.getService().bookFlight(aFlight);
-			    	}
-			    }
-			}
+			bookBoolean = rsl.getService().bookFlight(flightNumber, name1, surname1, name2, surname2);
 			
 		}
 		catch(Exception e) {

@@ -31,6 +31,7 @@ import javax.swing.JTextField;
 public class JFramePrincipal extends JFrame {
 
 	private JPanel contentPane;
+	private String userAddress;
 	private JTextField departureAirport;
 	private JTextField arrivalAirport;
 	private JScrollPane scrollTVProgs1 = new JScrollPane();
@@ -39,6 +40,7 @@ public class JFramePrincipal extends JFrame {
 	private AppController controller;
 	private JLabel lblDeparture;
 	private JLabel lblArrival;
+	private Map<String, ArrayList<FlightDTO>> allFlights;
 
 	/**
 	 * Launch the application.
@@ -135,7 +137,8 @@ public class JFramePrincipal extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public JFramePrincipal(AppController controller) {
+	public JFramePrincipal(String userAddress, AppController controller) {
+		this.userAddress = userAddress;
 		this.controller = controller;
 		printWindow(this);
 		this.setVisible(true);
@@ -143,14 +146,14 @@ public class JFramePrincipal extends JFrame {
 	}
 	
 	private void viewFlightButtonActionPerformed(ActionEvent evt) {
-		Map<String, ArrayList<FlightDTO>> allFlights = controller.printAllFlights();
+		allFlights = controller.printAllFlights();
 		updateList(allFlights);
 		
 	}
 	
 	
 	private void searchButtonActionPerformed(ActionEvent evt) {
-		Map<String, ArrayList<FlightDTO>> allFlights = controller.searchFlight(departureAirport.getText(), arrivalAirport.getText());
+		allFlights = controller.searchFlight(departureAirport.getText(), arrivalAirport.getText());
 		System.out.println("Search - Departure : "+departureAirport.getText()+", Arrival :"+arrivalAirport.getText());
 		updateList(allFlights);
 		
@@ -160,7 +163,8 @@ public class JFramePrincipal extends JFrame {
 		String selected = tvProgsList1.getSelectedValue();
 		StringTokenizer st = new StringTokenizer(selected, " ");
 		String flightNumber = st.nextToken();
-		controller.book(flightNumber);
+    	JFrameBooking frame = new JFrameBooking(flightNumber, userAddress, controller);
+		exit();
 		
 		System.out.println("Book - Departure : "+departureAirport.getText()+", Arrival :"+arrivalAirport.getText());
 		
@@ -183,6 +187,10 @@ public class JFramePrincipal extends JFrame {
 		
 		tvProgsList1.setModel(tvProgsList);
 		
+	}
+	
+	public void exit() {
+		this.setVisible(false);
 	}
 
 }
