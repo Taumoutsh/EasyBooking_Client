@@ -2,15 +2,15 @@
 <classpath>
 	<classpathentry kind="src" output="bin" path="src"/>
 	<classpathentry kind="var" path="JRE_LIB" sourcepath="JRE_SRC"/>
-	<classpathentry kind="lib" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/lib/datanucleus-api-jdo-5.2.1.jar"/>
-	<classpathentry kind="lib" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/lib/datanucleus-cache-5.1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/lib/datanucleus-core-5.2.1.jar"/>
-	<classpathentry kind="lib" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/lib/datanucleus-rdbms-5.2.1.jar"/>
-	<classpathentry kind="lib" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/lib/javax.jdo-3.2.0-m12.jar"/>
-	<classpathentry kind="lib" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/lib/log4j-1.2.14.jar"/>
-	<classpathentry kind="lib" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/lib/mysql-connector-java-8.0.17.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/EasyBooking.jar"/>
 	<classpathentry kind="con" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/bin"/>
 	<classpathentry kind="con" path="/Users/Tomoutch/SD/workspace/EasyBooking_Client/resources"/>
+	<classpathentry kind="lib" path="lib/datanucleus-api-jdo-5.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/datanucleus-cache-5.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/datanucleus-core-5.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/datanucleus-rdbms-5.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/javax.jdo-3.2.0-m12.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
