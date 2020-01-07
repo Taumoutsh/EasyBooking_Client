@@ -157,9 +157,15 @@ public class JFramePrincipal extends JFrame {
 	
 	private void bookButtonActionPerformed(ActionEvent evt) {
 		String selected = tvProgsList1.getSelectedValue();
+		tvProgsList1.getSelectedIndex();
 		StringTokenizer st = new StringTokenizer(selected, " ");
 		String flightNumber = st.nextToken();
-    	JFrameBooking frame = new JFrameBooking(flightNumber, userAddress, controller);
+		String priceS = "";
+		while(st.hasMoreElements()) {
+			priceS = st.nextToken();
+		}
+		int price = Integer.parseInt(priceS);
+    	JFrameBooking frame = new JFrameBooking(price, flightNumber, userAddress, controller);
 		exit();
 		
 	}
@@ -173,8 +179,14 @@ public class JFramePrincipal extends JFrame {
 		    ArrayList<FlightDTO> value = entry.getValue();
 		    
 		    for(FlightDTO flight : value) {
-		    	System.out.println("FLIGHT : "+flight.getAirlineCode()+" - FLIGHT NB : "+flight.getFlightNumber()+" - FROM : "+flight.getDepatureAirportCode()+" - TO : "+flight.getArrivalAirportCode());
-		    	tvProgsList.addElement(flight.getFlightNumber()+" FLIGHT : "+flight.getAirlineCode()+" - FROM : "+flight.getDepatureAirportCode()+" - TO : "+flight.getArrivalAirportCode());
+		    	
+		    	System.out.println("FLIGHT : "+flight.getAirlineCode()+" - FLIGHT NB : "+flight.getFlightNumber()
+		    			+ " - FROM : "+flight.getDepatureAirportCode()+" - TO : "+flight.getArrivalAirportCode());
+		    			
+		    	tvProgsList.addElement(flight.getFlightNumber()+" FLIGHT : "+flight.getAirlineCode()+""
+		    			+ " - FROM : "+flight.getDepatureAirportCode()+" - TO : "+flight.getArrivalAirportCode()
+		    			+" Dep the : "+flight.getDepartureTimeDate()+" to : "+flight.getArrivalTimeDate()
+		    			+". PRICE : "+flight.getPrice());
 		    }
 
 		}

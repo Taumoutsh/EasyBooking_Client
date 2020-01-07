@@ -38,6 +38,8 @@ public class JFrameBooking extends JFrame {
 
 	private AppController controller;
 	
+	private int price = 0;
+	
 	private String userAddress = "";
 	private String flightNumber = "";
 	
@@ -65,8 +67,8 @@ public class JFrameBooking extends JFrame {
 	
 	private JButton payButton = new JButton("Pay");
 	
-	public JFrameBooking(String flightNumber, String userAddress, AppController controller) {
-		System.out.println(flightNumber+" JFrameBooking");
+	public JFrameBooking(int price, String flightNumber, String userAddress, AppController controller) {
+		this.price = price;
 		this.flightNumber = flightNumber;
 		this.controller = controller;
 		this.userAddress = userAddress;
@@ -90,10 +92,11 @@ public class JFrameBooking extends JFrame {
 	public void setLocationAndSize()
 	{
 		
-		// Change labels of flight and user
+		// Change labels of flight and user and price
 		
 		userLabel.setText("User : "+userAddress);
 		flightInfoLabel.setText("Book the flight number : "+flightNumber);
+		priceLabel.setText("Price : "+price+"€ (by person)");
 		
 		//Setting location and Size of each components using setBounds() method.
 		flightInfoLabel.setBounds(170, 30, 300, 30);
