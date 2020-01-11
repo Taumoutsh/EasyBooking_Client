@@ -19,7 +19,6 @@ public class AppController {
 		new JFrameConnection(this);
 		rsl = new AppServiceLocator();
 		rsl.setService(args);
-		printAllFlights();
 		mapFlight = new HashMap<String, ArrayList<FlightDTO>>();
 		
 	}
@@ -51,7 +50,8 @@ public class AppController {
 		
 		return logInBoolean;
 	}
-	
+	/*
+	 
 	public Map<String, ArrayList<FlightDTO>> searchFlight(String origin, String destination) {
 		
 		try {
@@ -64,11 +64,12 @@ public class AppController {
 		return mapFlight;
 	}
 	
+	*/
+	
 	public Map<String, ArrayList<FlightDTO>> printAllFlights() {
 		
 		try {
 			mapFlight = rsl.getService().printAllFlights();
-			System.out.println(mapFlight.get("Lufthansa").get(0).getArrivalAirportLocation());
 		}
 		catch(Exception e) {
 			e.printStackTrace();

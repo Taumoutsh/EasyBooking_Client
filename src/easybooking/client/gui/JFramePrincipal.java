@@ -56,7 +56,7 @@ public class JFramePrincipal extends JFrame {
 	public void printWindow(JFrame frame) {
 			try {	
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame.setBounds(100, 100, 600, 600);
+				frame.setBounds(100, 100, 600, 400);
 				contentPane = new JPanel();
 				contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 				contentPane.setLayout(new BorderLayout(0, 0));
@@ -69,10 +69,10 @@ public class JFramePrincipal extends JFrame {
 				labelPanels.setLayout(new GridLayout(2,1));
 					
 				lblDeparture = new JLabel("Departure :");
-				labelPanels.add(lblDeparture);
+				//labelPanels.add(lblDeparture);
 					
 				lblArrival = new JLabel("Arrival :");
-				labelPanels.add(lblArrival);
+				//labelPanels.add(lblArrival);
 					
 				JLabel lblEasybooking = new JLabel("EasyBooking");
 				lblEasybooking.setHorizontalAlignment(SwingConstants.CENTER);
@@ -80,9 +80,11 @@ public class JFramePrincipal extends JFrame {
 				
 				// Input panel
 				
+				/* 
+				
 				JPanel inputPanel = new JPanel();
-				contentPane.add(inputPanel, BorderLayout.CENTER);
-				inputPanel.setLayout(new GridLayout(2,1));
+				//contentPane.add(inputPanel, BorderLayout.CENTER);
+				// inputPanel.setLayout(new GridLayout(2,1));
 				
 				departureAirport = new JTextField();
 				departureAirport.setPreferredSize(new Dimension(200, 24));
@@ -91,20 +93,27 @@ public class JFramePrincipal extends JFrame {
 				arrivalAirport.setPreferredSize(new Dimension(200, 24));
 				inputPanel.add(arrivalAirport);
 				
+				*/
+				
 				// Button panel
 				
 				JPanel buttonPanel = new JPanel();
 				contentPane.add(buttonPanel, BorderLayout.NORTH);
 				buttonPanel.setLayout(new GridLayout(2,2));
 				
+				/*
+				
+				
 				JButton searchButton = new JButton();
-				searchButton.setText("Search");
+				 searchButton.setText("Search");
 				searchButton.addActionListener(new java.awt.event.ActionListener() {
 					public void actionPerformed(java.awt.event.ActionEvent evt) {
 						 searchButtonActionPerformed(evt);
 						}
 
 					});
+				
+				*/
 				
 				JButton viewFlightButton = new JButton();
 				viewFlightButton.setText("View all flights");
@@ -115,12 +124,12 @@ public class JFramePrincipal extends JFrame {
 
 					});
 				
-				buttonPanel.add(searchButton);
+				//buttonPanel.add(searchButton);
 				buttonPanel.add(viewFlightButton);
 				
 				// Print flights panel
 				
-				scrollTVProgs1.setPreferredSize(new java.awt.Dimension(100, 110));
+				scrollTVProgs1.setPreferredSize(new java.awt.Dimension(200,200));
 				scrollTVProgs1.add(tvProgsList1);
 				tvProgsList1.setModel(tvProgsList);
 				JButton bookButton = new JButton();
@@ -132,7 +141,7 @@ public class JFramePrincipal extends JFrame {
 
 				});
 				
-				JPanel flightPanel = new JPanel((new GridLayout(4, 10)));
+				JPanel flightPanel = new JPanel((new GridLayout(4, 20)));
 				flightPanel.add(tvProgsList1);
 				flightPanel.add(bookButton);
 				contentPane.add(flightPanel, BorderLayout.SOUTH);
@@ -148,12 +157,15 @@ public class JFramePrincipal extends JFrame {
 		
 	}
 	
-	
+	/*
+	 
 	private void searchButtonActionPerformed(ActionEvent evt) {
 		allFlights = controller.searchFlight(departureAirport.getText(), arrivalAirport.getText());
 		updateList(allFlights);
 		
 	}
+	
+	*/
 	
 	private void bookButtonActionPerformed(ActionEvent evt) {
 		String selected = tvProgsList1.getSelectedValue();
